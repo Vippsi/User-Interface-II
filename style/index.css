@@ -15,7 +15,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {  
 margin: 0;  
 padding: 0;  
-border: 0;  
+/* border: 0;   */
 font-size: 100%;  
 font: inherit;  
 vertical-align: baseline;  
@@ -23,5 +23,156 @@ vertical-align: baseline;
 
 /* General Styles */
 * {
-    border:1px solid grey;
+    /* border:1px solid grey; */
+    max-width: 100%;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 800%;
+    color: black;
+}
+
+header {
+    background-color: #424242;
+}
+
+/* Navigation */
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .5%;
+}
+
+header nav .links {
+    justify-items: space-between;
+}
+
+.links a {
+    padding: 0 10px 0 10px;
+    font-size: 100%;
+}
+
+.links a:hover {
+    /* text-decoration: underline; */
+    border: 2px solid #bbbbbb;
+}
+
+
+.logo {
+    height: auto;
+    width: 50%;
+}
+
+/* Hero Section */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    background-image: url('/style/img/hero2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1.5%;
+}
+
+
+
+.heroContainer {
+    width: 80%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.heroContainer h1 {
+    font-weight: 400;
+    font-size: 500%;
+}
+
+.heroContainer p {
+    width: 80%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.button{
+    border: 2px solid #bbbbbb; 
+    font-weight: 500;
+    font-size: 150%;
+    padding: 5px;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+/* Gallery Section */
+.gallery {
+    background-color: #6b6b6ba9;
+}
+
+.gallery h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 250%;
+    padding-top:1%;
+    font-weight: 500;
+}
+
+.projects {
+    /* margin-top: 2%; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 3%;
+
+}
+
+figure  {
+    transform: scale(1.03);
+}
+
+figure:hover {
+    transform: scale(1.15);
+    border: 2px solid #414141;
+    padding: 2%;
+}
+
+figure figcaption {
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+/* Footer Section */
+
+footer {
+    background-color: #424242;
+    padding: 2.5%;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+}
+
+footer nav a {
+    font-weight: 500;
+    font-size: 150%;
 }
