@@ -126,6 +126,7 @@ header nav .links {
     background-color: #6b6b6ba9;
 }
 
+
 .gallery h2 {
     display: flex;
     justify-content: center;
@@ -134,23 +135,39 @@ header nav .links {
     font-weight: 500;
 }
 
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
 .projects {
     /* margin-top: 2%; */
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    padding: 3%;
+    width: 60vw;
 
 }
 
 figure  {
     transform: scale(1.03);
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 5%;
 }
 
 figure:hover {
     transform: scale(1.15);
     border: 2px solid #414141;
     padding: 2%;
+}
+
+figure img {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
 }
 
 figure figcaption {
