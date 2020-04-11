@@ -36,6 +36,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+
 a {
     list-style: none;
     text-decoration: none;
@@ -98,7 +99,7 @@ header nav .links {
 
 .heroContainer {
     width: 98%;
-    height: 90vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,6 +127,28 @@ header nav .links {
 
 .button:hover {
     transform: scale(1.05);
+}
+
+/* About me Section */
+.aboutMe {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid red;
+    width: 100%;
+}
+
+.aboutMeContainer {
+    border: 2px solid blue;
+    
+}
+
+.aboutMeContainer p {
+    width: 50%;
+}
+
+.aboutMe p {
+    font-size: 2rem;
+    color: black;
 }
 
 /* Gallery Section */
