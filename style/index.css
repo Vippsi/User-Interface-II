@@ -132,19 +132,50 @@ header nav .links {
 /* About me Section */
 .aboutMe {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
     border: 2px solid red;
     width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    height: 60vh;
+    background-color: #bbbbbb ;
 }
 
 .aboutMeContainer {
+    display: flex;
     border: 2px solid blue;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-direction: column; */
+    width: 60%;
+    background-color: white;
+    margin: 2%;
+    padding: 3%;
 
     
 }
 
+.aboutMeContainer img{
+    height: auto;
+    width: 15%;
+    border-radius: 50%;
+    margin-left: 10%;
+}
+
+.aboutMeTextContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.aboutMe h2{
+    align-items: flex-start;
+}
+
 .aboutMeContainer p {
     width: 50%;
+    align-items: center;
 }
 
 .aboutMe p {
